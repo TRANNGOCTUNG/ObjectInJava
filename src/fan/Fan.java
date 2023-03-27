@@ -33,8 +33,8 @@ public class Fan {
     }
 
     public void setSpeed(int newSpeed) {
-                if (on && newSpeed > 0 || on && newSpeed <= 3) {
-                    if (newSpeed <= 1) {
+                if (on && newSpeed >= 0 || on && newSpeed <= 3) {
+                    if (newSpeed == 1) {
                         System.out.println("Slow: ");
                     } else if (newSpeed == 2) {
                         System.out.println("Medium: ");
